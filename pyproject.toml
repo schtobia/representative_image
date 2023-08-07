@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "representative_image"
+version = "1.0"
+description = "Pelican plugin for extracting a representative image"
+readme = "Readme.md"
+authors = ["Paolo Melchiorre <paolo@melchiorre.org>", "Jesse Kershaw <jesse.kershaw@gmail.com>", "Khue Vu <khuevu@gmail.com>", "murchik <mixturchik@gmail.com>", "Kernc <kerncece@gmail.com>", "Lucas Cimon <lucas.cimon@gmail.com>", "Tobias Schmidl <tobias@schmidl.dev>"]
+keywords = ["pelican", "plugin"]
+repository = "https://github.com/schtobia/representative_image"
+packages = [{ include = "pelican" }]
+include = ["CHANGELOG.md", "Readme.md", "pelican"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Framework :: Pelican",
+    "Framework :: Pelican :: Plugins",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://docs.getpelican.com/"
+"Funding" = "https://donate.getpelican.com/"
+"Source" = "https://github.com/schtobia/representative_image"
+"Tracker" = "https://github.com/schtobia/representative_image/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+beautifulsoup4 = "^4.8.0"
+
+[tool.poetry.dev-dependencies]
+pelican = "^4.8.0"
+
+[tool.poetry.extras]
+markdown = ["markdown"]
+
+[tool.poetry.group.dev.dependencies]
+markdown = "^3.4.0"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
